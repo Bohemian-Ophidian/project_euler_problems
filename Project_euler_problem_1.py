@@ -1,3 +1,5 @@
+#This program solves the first problem in the project euler problems
+#In this problem we are required to create a program that finds the sum of all the multiples of 3 and/or 5
 def multipleOf3_5(number):
     '''to find the multiples of 3 and/or 5'''
     if number%3==0 or number%5==0:
