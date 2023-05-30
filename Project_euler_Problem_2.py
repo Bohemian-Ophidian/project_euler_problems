@@ -5,6 +5,7 @@
 n = int(input("Please enter the limit of the program:"))
 
 def fibo_gen(first=1, second=1):
+    '''to find the sum of even fibonacci numbers'''
     if second>n:
         return 0
     if second%2==0:
@@ -14,3 +15,10 @@ def fibo_gen(first=1, second=1):
 
 print(fibo_gen())
 
+#n = 8 ; should result with an output of 10 
+#n = 10; should result with an output of 10
+#n = 34; should result with an output of 44
+#n = 60; should result with an output of 44
+#n = 1000; should result with an output of 798
+#n = 100000; should result with an output of 60696
+#n = 4000000; should result with an output of 4613732
