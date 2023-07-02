@@ -35,4 +35,4 @@ def letter_count(limit:int=1000)->int:
 print(letter_count())
 stop = time.perf_counter()
 
-print("The time elapsed:",stop-start)
+print("The time elapsed:",stop-start)#should give an output of 21124
