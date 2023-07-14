@@ -21,19 +21,19 @@ for num in range(1,28124):
     abundant_numbers.append(num)
 
 #addition
-sums_of_abundant = []
+sums_of_abundant = set()
 for i, num in enumerate(abundant_numbers):
     for number in abundant_numbers[i:]:
         addition = num+number
         if addition <=28123:
-            sums_of_abundant.append(addition)
+            sums_of_abundant.add(addition)
 sum_of_nonAb=0
 for num in range(28124):
     if num in sums_of_abundant:
         continue
     sum_of_nonAb+=num
 
-print(sum_of_nonAb)# it is a slow operation taking about 2 minutes and 50 seconds
+print(sum_of_nonAb)# it is a slow operation taking about 5 seconds of time
 # should give an output of 4179871
 stop = time.perf_counter()
 print(stop - start)
